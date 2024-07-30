@@ -1,0 +1,19 @@
+$base-font-size: 18px;
+$heading-scale: 8;
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-style: italic;
+    font-size: $base-font-size + $heading-scale * (6 - $i);
+    font-weight: 500;
+    font-family: Arial;
+    color: violet;
+    text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+  h3 {
+    font-size: 18px;
+  }
+}
